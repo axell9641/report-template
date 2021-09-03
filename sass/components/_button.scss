@@ -1,0 +1,28 @@
+#kc-form-buttons {
+  @include flexCenter();
+  margin-bottom: 1.6rem;
+}
+
+.btn-primary {
+  @include flexCenter();
+  @include bodyBold();
+  padding: 1.5rem 3.35rem;
+  cursor: pointer;
+  color: $baseWhite;
+  background: #6785c1;
+  box-shadow: 0px 1px 24px -1px rgba(13, 8, 70, 0.4);
+  backdrop-filter: blur(20px);
+  border-radius: 40px;
+  border: 0;
+}
+
+.btn-link {
+  @include textButtonRegular();
+  text-decoration-line: underline;
+}
+
+.btn-link-dark {
+  @include bodyBold();
+  color: $grey400;
+  text-decoration-line: underline;
+}

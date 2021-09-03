@@ -1,0 +1,61 @@
+.form-group {
+  margin-bottom: 2rem;
+}
+.pf-c-form-control,
+.pf-c-form-control:hover {
+  height: 4.8rem;
+  padding: 1.5rem 1.6rem;
+  border: 1px solid $grey500;
+  box-sizing: border-box;
+  border-radius: 40px;
+  outline: none;
+  width: 100%;
+}
+
+.pf-c-form-control:focus {
+  filter: drop-shadow(0px 2px 4px $grey300);
+}
+
+.pf-c-form-control::placeholder {
+  @include bodyRegular();
+  color: $grey300;
+}
+
+.pf-c-form-control[aria-invalid="true"] {
+  border-color: $semantic-danger-500;
+}
+
+.pf-m-error {
+  display: inline-block;
+  @include captionRegular();
+  color: $semantic-danger-500;
+  margin-left: 1.5rem;
+  margin-top: 0.4rem;
+}
+
+#kc-form-options {
+  margin-right: 1rem
+}
+
+#kc-form-options .checkbox {
+  @include flexCenter();
+}
+
+.checkbox label,
+.radio label {
+  cursor: pointer;
+  @include bodyRegular();
+  color: $grey900;
+}
+
+#rememberMe {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  margin-left: 0.4rem;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+}

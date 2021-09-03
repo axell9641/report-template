@@ -1,0 +1,130 @@
+@import "../abstracts/mixins";
+
+.login-pf body {
+  background: url("../img/background.png") no-repeat center center fixed;
+  background-color: #5876aa;
+  padding: 4rem 0 1.6rem;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+
+  @include respond(phone) {
+    padding: 4rem 1.2rem 1.1rem;
+  }
+}
+
+.login-pf {
+  /* Necessary to remove the default background-image*/
+  background: unset;
+}
+
+.footer {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.8rem;
+  height: 4.8rem;
+  @include respond(phone) {
+    margin-top: 2.4rem;
+  }
+
+  &__label {
+    margin-right: 0.8rem;
+    color: $baseWhite;
+    font-size: 1.4rem;
+  }
+
+  img {
+    display: inline-block;
+    height: 100%;
+  }
+}
+
+#kc-header {
+  margin-bottom: 4rem;
+  @include respond(phone) {
+    margin-bottom: 2.4rem;
+  }
+}
+
+#kc-header-wrapper {
+  @include displayBold();
+  text-align: center;
+  color: $baseWhite;
+}
+
+#kc-page-title {
+  text-align: center;
+  @include titleBold();
+  margin-bottom: 3.2rem;
+  color: $grey400;
+}
+
+#placeholder-for-kc-info {
+  height: 5.7rem;
+}
+
+#placeholder-for-kc-reset-info {
+  height: 5.7rem;
+  @include respond(phone) {
+    margin-bottom: 2.8rem;
+  }
+}
+
+.login-pf-settings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.4rem;
+}
+
+#kc-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  @include flexCenter();
+  background-color: $grey100;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+#kc-info-wrapper {
+  width: 100%;
+}
+
+#kc-registration-container {
+  padding: 2rem 8.3rem;
+  @include respond(phone) {
+    padding: 2rem 6rem;
+  }
+}
+
+#kc-registration {
+  span {
+    @include bodyRegular();
+    color: $grey400;
+    margin-right: 2rem;
+  }
+
+  a {
+    margin-left: 2rem;
+  }
+}
+
+.login-pf-signup {
+  // padding: 1.6rem 3.6rem;
+  text-align: center;
+}
+
+.register-link-options {
+  margin-bottom: 3.4rem;
+}
+
+.forgot-body-instructions {
+  @include bodyRegular();
+  padding: 2rem 2.1rem;
+  color: $grey400;
+}

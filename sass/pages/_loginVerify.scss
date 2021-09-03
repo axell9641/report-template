@@ -1,0 +1,25 @@
+@import "../abstracts/mixins";
+
+.body-instructions {
+  @include bodyRegular();
+  color: $grey900;
+  margin-bottom: 6.4rem;
+
+  @include respond(phone) {
+    margin-bottom: 10rem;
+  }
+}
+
+.footer-instructions {
+  @include bodyRegular();
+  padding: 2rem 2.1rem;
+  color: $grey400;
+
+  a {
+    @include textButtonRegular();
+  }
+  span {
+    margin-top: 1rem;
+    display: inline-block;
+  }
+}
