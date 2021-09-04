@@ -36,7 +36,6 @@ hr.solid {
   grid-template-rows: repeat(2, auto);
   row-gap: 20px;
   padding-bottom: 1.2rem;
-  // background-color: $grey300;
   &__title {
     @include subheaderBold();
     padding-left: 2rem;
@@ -56,33 +55,29 @@ hr.solid {
 ul.children,
 ul.children ul {
   list-style: none;
-  // padding: 0;
 }
 
 ul.children ul {
-  margin-left: 1.8em;
+  margin-left: 1.8rem;
 }
 
 ul.children li {
-  margin-left: 0.9em;
+  margin-left: 0.9rem;
   border-left: $connector;
   position: relative;
 }
 
 ul.children li:last-child {
-  border-left: none;
+  border-left: 1px solid transparent;
 }
 
 ul.children li:before {
-  width: 0.9em;
-  height: 0.6em;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
   margin-right: 0.1em;
-  vertical-align: top;
-  border-bottom: $connector;
+  background-color: #C6AFF6;
+  transform: translate(-50%, -50%);
   content: "";
   display: inline-block;
-}
-
-ul.children li:last-child:before {
-  border-left: $connector;
 }
