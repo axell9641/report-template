@@ -11,3 +11,41 @@ hr.solid {
   margin-bottom: 40px;
 }
 
+.toc {
+  &__title {
+    @include headlineBold();
+    color: $primary500;
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    @include subheaderRegular();
+    color: $grey900;
+  }
+}
+
+.toc-list {
+  margin-left: 40px;
+  list-style-type: none;
+  counter-reset: li;
+}
+
+li {
+  @include subheaderRegular();
+  color: $grey900;
+
+  .strong-item {
+    @include subheaderBold();
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+li:before {
+  counter-increment: li;
+  content: counter(li, decimal-leading-zero) ".";
+  color: $primary500;
+  margin-right: 10px;
+}
