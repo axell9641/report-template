@@ -1,0 +1,6 @@
+.page-container {
+  padding: 40px 88px 60px;
+  display: grid;
+  grid-template-rows: auto $footer-height;
+  row-gap: 40px;
+}

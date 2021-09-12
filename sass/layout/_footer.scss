@@ -1,0 +1,40 @@
+.footer {
+  padding: 20px 40px;
+  background-color: $grey100;
+  border-radius: 16px;
+  &__title {
+    @include bodyBold();
+    color: $grey900;
+    margin-bottom: 16px;
+  }
+
+  &__details {
+    display: grid;
+    grid-template-columns: minmax(176px, auto) 1fr;
+    column-gap: 20px;
+    row-gap: 8px;
+  }
+
+  &__label {
+    @include bodyBold();
+    color: $grey900;
+  }
+
+  &__value {
+    @include bodyRegular();
+    color: $grey900;    
+  }
+
+  &__link {
+      color: $primary500;
+  }
+
+  .icon-description {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 4px;
+    }
+  }
+}
