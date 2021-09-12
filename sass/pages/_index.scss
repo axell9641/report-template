@@ -30,22 +30,26 @@ hr.solid {
   counter-reset: li;
 }
 
-li {
-  @include subheaderRegular();
-  color: $grey900;
-
-  .strong-item {
-    @include subheaderBold();
-  }
-
+li.toc-item {
   &:not(:last-child) {
     margin-bottom: 20px;
   }
 }
 
-li:before {
+li.toc-item:before {
   counter-increment: li;
   content: counter(li, decimal-leading-zero) ".";
+  @include subheaderRegular();
   color: $primary500;
-  margin-right: 10px;
+  margin-right: 20px;
+}
+
+.toc-link {
+  text-decoration: none;
+  @include subheaderRegular();
+  color: $grey900;
+
+  &--strong {
+    @include subheaderBold();
+  }
 }
