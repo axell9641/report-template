@@ -31,22 +31,18 @@
 }
 
 ul.children {
-  padding-left: 1.5rem;
+  margin-left: 24px;
   margin-top: 20px;
 }
 
 ul.children ul {
-  padding-left: 2rem;
+  margin-left: 24px; // space between parent node and its children
   margin-top: 16px;
 }
 
-ul.children li {
-  padding-left: 8px;
-  margin-bottom: 10px;
-  list-style: none;
-}
 
 ul.children li {
+  list-style: none;
   position: relative;
   margin-bottom: 0;
   &:not(:last-child) {
@@ -61,8 +57,8 @@ ul.children li:after {
   left: -19px; /*adjust manually*/
   top: 7px;
 
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: $primary200;
 }
