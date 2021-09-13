@@ -49,7 +49,9 @@ ul.children li {
 ul.children li {
   position: relative;
   margin-bottom: 0;
-  padding-bottom: 2.5em;
+  &:not(:last-child) {
+    padding-bottom: 16px;
+  }
 }
 
 ul.children li:after {
