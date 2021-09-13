@@ -25,7 +25,7 @@
   }
 
   &__description {
-    margin-top: 4px;
+    margin-top: 8px;
     @include subheaderRegular();
   }
 }
@@ -37,7 +37,7 @@ ul.children {
 
 ul.children ul {
   padding-left: 2rem;
-  margin-top: 2rem;
+  margin-top: 16px;
 }
 
 ul.children li {
